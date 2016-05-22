@@ -13,6 +13,7 @@ nav {
 	position: fixed;
 	width: 100%; /*when you fix the position,the default
 	size is no 100%*/
+	top: 0;
 }
 
 a {
@@ -116,6 +117,58 @@ footer ul li {
 }
 
 
+/*ticket style*/
+.ticket-table {
+	margin-top: 5rem;
+}
+
+
+.ticket-table td, 
+.ticket-table th{
+	border: 1px black solid;
+	padding: 20px;
+}
+
+/*trick to make a table center*/
+.hcenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.ticket-table table {
+	border-collapse: collapse;
+}
+
+.ticket-table button {
+	background-color: #2982FF;
+	border-color: #2982FF;
+}
+
+.ticket-table th {
+	background-color: rgba(128, 128, 128, 0.2);
+}
+
+
+.primary-button {
+	font-size: 1.5rem;
+	background-color: transparent;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-weight: 100;
+	transition: background-color 0.5s linear;
+}
+
+.primary-button:hover {
+	background-color: #0E81C1;
+	cursor: pointer;
+}
+
+.contact-form {
+	margin-top: 5rem;
+}
 
 
 
