@@ -1,0 +1,127 @@
+html {
+	background: url(../pic/background.jpg);
+	background-size: cover;
+	font-size: 14px;
+	}
+
+
+nav {
+	background-color: black;
+    color: #FFF;
+	color: #FFF; /*white=FFFFFF*/
+	height: 60px;
+	position: fixed;
+	width: 100%; /*when you fix the position,the default
+	size is no 100%*/
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+/*helper classes*/
+.center {
+	text-align: center;
+}
+
+
+/*end helper classes*/
+.nav-bar li{
+	display: inline-block;
+}
+
+.nav-bar {
+	margin: 0;
+	/*0代表没有*/
+	padding: 0;
+	float: right;
+}
+
+.nav-bar li {
+	border: 1px solid white;
+	margin: 10px;
+	/*＊ space between a and another object*/
+	padding: 10px;
+	/*space between text content and border*/
+	transition: background-color .5s linear;
+}
+
+.nav-bar li:hover {
+	background-color: rgba(255,255,255,0.5);
+	cursor: pointer;
+}
+
+.nav-logo {
+	width: 50px;
+	height: auto;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+
+
+.home-title {
+	font-family: 'Lily Script One', cursive;
+	font-size: 4rem; 
+	color: white;
+}
+
+.posters {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.posters div{
+	width: 30%;
+	margin: 0.1%;
+	border: 5px solid white;
+	display:  inline-block;
+	position:relative;
+	transition: width 0.5s linear, margin 0.5s linear;
+}
+
+.posters div:hover {
+	width: 32%;
+	margin: 0;
+}
+
+.posters div img {
+	width: 100%;
+	filter:brightness(70%);
+	-webkit-filter:brightness(70%);
+}
+
+.posters div h3 {
+	position: absolute;
+	top: 50%;
+	left:0;
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	tranform:tranlateY(-50%);
+}
+
+footer ul {
+	margin:0;
+	padding: 20px 0;
+}
+
+
+footer ul li {
+	display: inline-block;
+	color: white;
+	margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
