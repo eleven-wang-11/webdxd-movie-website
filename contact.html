@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contact| WebdXd Movies</title>
+	<link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<nav>
+		<img class= "nav-logo" src="pic/icon.png" alt="logo">
+		<!-- when image break, it will show the alt content -->
+		<ul class="nav-bar"> 
+			<a href="index.html"><li>Home</li></a>
+			<a href="ticket.html"><li>Ticket</li></a>
+			<a href="company.html"><li>About</li></a>
+			<a href="contact.html"><li>Contact</li></a>
+	</nav>
+
+
+	<form class="contact-form center" action="#" method="POST">
+		<h1 class="center">Contact Us</h1>
+		<input type="text" placeholder="Name"></input>
+		<input type"text" placeholder="Email"></input>
+		<input type="text" placeholder="Phone number"></input>
+	
+		<!-- radio -->
+		<label for="gender">Gender</label>
+		<input class ="inline" type="radio" name="gender" value="Female"><label> Female</label>
+		<input class ="inline" type="radio" name="gender" value="Male"><label> Male</label>
+		<input class ="inline" type="radio" name="gender" value="Other"><label> Other</label>
+
+		<textarea placeholder="Messages"></textarea>
+
+		<select >
+			<option value="general-questions">General questions</option>
+			<option value="pricing">Pricing</option>
+		</select>
+
+		<div class="checkbox">
+			<label>
+    		<input class="inline" type="checkbox" name="consent">
+    		I have read terms and conditions
+  			</label>
+		</div>
+	
+
+		<input class="primary-button"type="submit" value="send">
+
+
+
+
+	</form>
+
+
+
+</body>
+</html>
