@@ -3,11 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Contact| WebdXd Movies</title>
-	<link rel="<link href='https://fonts.googleapis.com/css?family=Lily+Script+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>" type="text/css" href="">
+	<link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
 	<nav>
@@ -21,25 +22,38 @@
 	</nav>
 
 
-	<form class="contact-form">
+	<form class="contact-form center" action="#" method="POST">
 		<h1 class="center">Contact Us</h1>
 		<input type="text" placeholder="Name"></input>
 		<input type"text" placeholder="Email"></input>
 		<input type="text" placeholder="Phone number"></input>
-		<select>
+	
+		<!-- radio -->
+		<label for="gender">Gender</label>
+		<input class ="inline" type="radio" name="gender" value="Female"><label> Female</label>
+		<input class ="inline" type="radio" name="gender" value="Male"><label> Male</label>
+		<input class ="inline" type="radio" name="gender" value="Other"><label> Other</label>
+
+		<textarea placeholder="Messages"></textarea>
+
+		<select >
 			<option value="general-questions">General questions</option>
 			<option value="pricing">Pricing</option>
 		</select>
 
-		<input type="checkbox" name="consent"><label for="consent"> I have read terms and conditions</label>
-		<!-- radio -->
-		<label for="gender">Gender</label>
-		<input type="radio" name="gender" value="Female"><label> Female</label>
-		<input type="radio" name="gender" value="Male"><label> Male</label>
-		<input type="radio" name="gender" value="Other"><label> Other</label>
-		<input type="submit" value="send">
+		<div class="checkbox">
+			<label>
+    		<input class="inline" type="checkbox" name="consent">
+    		I have read terms and conditions
+  			</label>
+		</div>
+	
 
-		<textarea placeholder="Messages"></textarea>
+		<input class="primary-button"type="submit" value="send">
+
+
+
+
 	</form>
 
 
