@@ -170,20 +170,18 @@ footer ul li {
 	background-color: rgba(128, 128, 128, 0.2);
 }
 
-.primary-button {
-	font-size: 1.5rem;
-	background-color: transparent;
-	border: 1px solid black;
-	border-radius: 5px;
-	padding: 10px;
+.btn-primary {
+	background-color: #29B2FF;
+	border-color: #29B2FF;
 	color: white;
-	font-weight: 100;
-	transition: background-color 0.5s linear;
+	cursor: pointer;
+	font-weight: 200;
+	transition: background-color .5s linear;
+	margin-left: auto;
 }
 
-.primary-button:hover {
+.btn-primary :hover {
 	background-color: #0E81C1;
-	cursor: pointer;
 }
 
 .contact-form {
@@ -275,12 +273,30 @@ label {
 	position: fixed;
 	z-index: -2;
 }
+
 .container {
 	margin-top: 60px;
 }
 
 
 
+.ticket-table button.btn-disabled {
+	background-color: #ccc;
+}
+
+.input-invalid {
+	background-color: #ff9999;
+	border: 1px solid red;
+}
+
+
+button {
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
 
 
 
