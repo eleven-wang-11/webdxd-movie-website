@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+
 
 </head>
 <body>
@@ -24,7 +26,7 @@
 
 	<div class="ticket-table">
 		<h1 class="center">Upcoming Shows</h1>
-		<table class="hcenter">
+		<table id="ticket-table" class="hcenter">
 			<tr>
 				<!-- table row -->
 				<th>Name</th>
@@ -32,43 +34,58 @@
 				<th>Date</th>
 				<th>Ticket Left</th>
 				<th>Purchase</th>
-
 			</tr>
-			<tr>
-				<!-- table row -->
-				<td>Avengers</td>
-				<td>$10</td>
-				<td>2015/07/01</td>
-				<td>50</td>
-				<td><button class="primary-button">Buy Ticket</button></td>
+		</table>
 
-			</tr>
-			<tr>
-				<!-- table row -->
-				<td>Start Wars</td>
-				<td>$8</td>
-				<td>2016/05/20</td>
-				<td>50</td>
-				<td><button class="primary-button">Buy Ticket</button></td>
-
-			</tr>
-
-
-			<tr>
-				<!-- table row 4-->
-				<td>Titanic</td>
-				<td>$20</td>
-				<td>1996/07/07</td>
-				<td>50</td>
-				<td><button class="primary-button">Buy Ticket</button></td>
-
-			</tr>
-		
-	</table>
-
+		<input type="text" id="movie-name" placeholder="Movie Name">
+		<input type="number" id="price" placeholder="Movie Price">
+		<input type="date" id="date" placeholder="Release Date">
+		<input type="number" id="ticket-left" placeholder="Ticket Left">
+		<input class="btn-primary" type="button" id="submit-movie" value="Submit">
 	</div>
 
-	
+	<div class="ticket-table">
+		<h1 class="center">User</h1>
+		<table id ="users" class="user hcenter">
+			<tr>
+				<!-- table row -->
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Phone Number</th>
+				<th>Movie</th>
+			</tr>
+		</table>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="buy-ticket-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h5 class="modal-title" id="myModalLabel">Buy Ticket</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<input class= "form-control" type="text" name="first_name" id="first_name" placeholder="First Name">
+						<input class= "form-control" type="text" name="last_name" id="last_name" placeholder="Last Name">
+						<input class= "form-control" type="text" name="phone" id="phone"
+						placeholder="Phone Number">
+						<input type="hidden" id="movie_id">
+					</form>
+
+				</div>
+				<div class="modal-footer">
+					<h5></h5>
+					<input type="submit" class="center" id ="buy-ticket-btn" value="Submit">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/ticket.js"></script>
 
 
 
